@@ -8,6 +8,8 @@ exports.seed = function(knex, Promise) {
         {
           id: 1,
           phoneName: "Apple iPhone X",
+          phoneUrl:
+            "https://images.apple.com/v/iphone-x/e/images/overview/primary/dual_cameras_smart_cameras_large.jpg",
           price: 999,
           screenSize: 5.8,
           resolutionWidth: 1125,
@@ -20,6 +22,8 @@ exports.seed = function(knex, Promise) {
         {
           id: 2,
           phoneName: "Apple iPhone 8",
+          phoneUrl:
+            "https://images.apple.com/v/iphone-8/d/images/overview/primary/design_sizes_large.jpg",
           price: 699,
           screenSize: 4.7,
           resolutionWidth: 750,
@@ -32,6 +36,8 @@ exports.seed = function(knex, Promise) {
         {
           id: 3,
           phoneName: "Samsung Galaxy S8",
+          phoneUrl:
+            "https://drop.ndtv.com/TECH/product_database/images/329201783846PM_635_samsung_galaxy_s8.jpeg",
           price: 724,
           screenSize: 5.8,
           resolutionWidth: 1440,
@@ -44,6 +50,8 @@ exports.seed = function(knex, Promise) {
         {
           id: 4,
           phoneName: "Google Pixel 2 XL",
+          phoneUrl:
+            "https://drop.ndtv.com/TECH/product_database/images/104201774205PM_635_google_pixel_2_xl.jpeg",
           price: 649,
           screenSize: 5.98,
           resolutionWidth: 1440,
@@ -56,6 +64,8 @@ exports.seed = function(knex, Promise) {
         {
           id: 5,
           phoneName: "Samsung Galaxy Note 8",
+          phoneUrl:
+            "https://ss7.vzw.com/is/image/VerizonWireless/pdp-samsung-great-feature1-d-0817?$pngalpha$&scl=1&scl=2",
           price: 950,
           screenSize: 6.3,
           resolutionWidth: 1440,

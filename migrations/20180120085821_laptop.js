@@ -2,6 +2,7 @@ exports.up = function(knex, Promise) {
   return knex.schema.createTable("laptops", laptops => {
     laptops.increments("id");
     laptops.string("laptopName");
+    laptops.string("laptopUrl");
     laptops.integer("price");
     laptops.float("screenSize");
     laptops.integer("resolutionWidth");
