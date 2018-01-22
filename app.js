@@ -2,14 +2,7 @@ const express = require("express");
 const app = express();
 const queries = require("./queries");
 const bodyParser = require("body-parser");
-const cors = require("cors");
 
-// var corsOptions = {
-//   origin: true,
-//   optionsSuccessStatus: 200
-// };
-
-app.use(cors());
 app.use(bodyParser.json());
 
 app.get("/", (request, response) => {
