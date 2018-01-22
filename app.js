@@ -4,15 +4,15 @@ const queries = require("./queries");
 const bodyParser = require("body-parser");
 const cors = require("cors");
 
-var corsOptions = {
-  origin: true,
-  optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204
-};
+// var corsOptions = {
+//   origin: true,
+//   optionsSuccessStatus: 200
+// };
 
-app.use(cors(corsOptions));
+// app.use(cors(corsOptions));
 app.use(bodyParser.json());
 
-app.get("/laptops", (request, response) => {
+app.get("/laptops", cors(), (request, response) => {
   queries
     .list("laptops")
     .then(laptops => {
