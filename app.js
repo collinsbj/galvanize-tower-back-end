@@ -12,6 +12,10 @@ const cors = require("cors");
 app.use(cors());
 app.use(bodyParser.json());
 
+app.get("/", (request, response) => {
+  response.send("it worked");
+});
+
 app.get("/laptops", (request, response) => {
   queries
     .list("laptops")
