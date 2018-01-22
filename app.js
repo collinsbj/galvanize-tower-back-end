@@ -9,10 +9,10 @@ const cors = require("cors");
 //   optionsSuccessStatus: 200
 // };
 
-// app.use(cors(corsOptions));
+app.use(cors());
 app.use(bodyParser.json());
 
-app.get("/laptops", cors(), (request, response) => {
+app.get("/laptops", (request, response) => {
   queries
     .list("laptops")
     .then(laptops => {
