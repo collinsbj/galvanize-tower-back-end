@@ -2,9 +2,14 @@ const express = require("express");
 const app = express();
 const queries = require("./queries");
 const bodyParser = require("body-parser");
-// const cors = require("cors");
+const cors = require("cors");
 
-// app.use(cors);
+var corsOptions = {
+  origin: true,
+  optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204
+};
+
+app.use(cors(corsOptions));
 app.use(bodyParser.json());
 
 app.get("/laptops", (request, response) => {
