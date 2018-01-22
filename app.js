@@ -8,19 +8,14 @@ app.use(cors());
 app.use(bodyParser.json());
 
 app.get("/", (request, response) => {
-  var laptops = [];
-  var phones = [];
-  queries
-    .list("laptops")
-    .then(info => laptops.push(info))
-    .then(queries.list("phones"))
-    .then(info2 => phones.push(info2))
-    .then(
+  queries.list("laptops").then(laptops =>
+    queries.list("phones").then(phones =>
       response.json({
         laptops: laptops,
         phones: phones
       })
-    );
+    )
+  );
 });
 
 app.get("/laptops", (request, response) => {
