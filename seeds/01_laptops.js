@@ -63,7 +63,7 @@ exports.seed = function(knex, Promise) {
           id: 4,
           laptopName: "Lenovo X1 Yoga",
           laptopUrl:
-            "/medias/lenovo-thinkpad-x1-yoga-iF-design-award-2017-hero.pn…4ZTBiODViOWQyOTFmNmFlYTA2NzM4MWNiOGQwZDJiY2Y3ZjgwNTA4MzcwMzY",
+            "https://www.notebookcheck.net/uploads/tx_nbc2/lenovo-x1-yoga-feature-1.png",
           price: 2114,
           screenSize: 14,
           resolutionWidth: 2560,
@@ -81,7 +81,7 @@ exports.seed = function(knex, Promise) {
           id: 5,
           laptopName: "Dell Alienware 15",
           laptopUrl:
-            "//i.dell.com/sites/imagecontent/products/PublishingImages/al…3G0018_aw_laptop_alienware15_gaming_pdp_polaris_module10.jpg",
+            "https://i1.wp.com/laptopmedia.com/wp-content/uploads/2015/04/13758916810369-e1420804557175.jpeg",
           price: 3699,
           screenSize: 15.6,
           resolutionWidth: 1920,

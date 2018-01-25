@@ -8,14 +8,17 @@ app.use(cors());
 app.use(bodyParser.json());
 
 app.get("/", (request, response) => {
-  queries.list("laptops").then(laptops =>
-    queries.list("phones").then(phones =>
-      response.json({
-        laptops: laptops,
-        phones: phones
-      })
+  queries
+    .list("laptops")
+    .then(laptops =>
+      queries.list("phones").then(phones =>
+        response.json({
+          laptops: laptops,
+          phones: phones
+        })
+      )
     )
-  );
+    .catch(console.error);
 });
 
 app.get("/laptops", (request, response) => {

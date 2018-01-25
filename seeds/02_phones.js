@@ -23,7 +23,7 @@ exports.seed = function(knex, Promise) {
           id: 2,
           phoneName: "Apple iPhone 8",
           phoneUrl:
-            "https://images.apple.com/v/iphone-8/d/images/overview/primary/design_sizes_large.jpg",
+            "https://apple.insidercdn.com/gallery/0-28089-iphone8andplustop1-l.jpg",
           price: 699,
           screenSize: 4.7,
           resolutionWidth: 750,
